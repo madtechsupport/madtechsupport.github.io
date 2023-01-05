@@ -2,7 +2,6 @@
 layout: post
 title:  "dd command"
 date:   2023-01-03 16:26:00 +0000
-categories: linux command line
 ---
 Notes about the `dd` command in Linux.
 
