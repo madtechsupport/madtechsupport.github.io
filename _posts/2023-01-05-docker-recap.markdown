@@ -14,7 +14,7 @@ I've done some reading and here's a short summary of the story as I see it:
 
 Fast forward to 2023 where Docker would like you to do all your development using [Docker Desktop](https://www.docker.com/products/docker-desktop/alternatives/) because that's there business model and other vendors like RedHat support a container ecosystem that's built around cgroups v2 and OCI Containers using Podman as the drop-in replacement for Docker.
 
-# Installing Docker on Fedora
+## Installing Docker on Fedora
 The Fedora 37 Workstation I'm using doesn't come with `docker` installed, so if you want to use `docker` it needs to be installed. The alternative is to use `podman`, but for now I'm installing `docker`. The options for installing `docker` on Fedora are:
 * [Docker Desktop for Linux](https://docs.docker.com/desktop/install/linux-install/)
 * [Docker Engine](https://docs.docker.com/engine/install/fedora/)
