@@ -12,7 +12,7 @@ I've done some reading and here's a short summary of the story as I see it:
 * The [Moby project](https://www.docker.com/blog/introducing-the-moby-project/) and [Docker CE](https://docker-docs.netlify.app/release-notes/docker-ce/#17030-ce-2017-03-01) are launched in 2017 by which time there is already a large and growing number of container related project.
 * Red Hat made changes to [Fedora 31](https://www.redhat.com/sysadmin/fedora-31-control-group-v2) in 2019 that kind of [broke things for Docker on Fedora](https://fedoramagazine.org/docker-and-fedora-32/) but improved things for [Podman](https://www.redhat.com/en/topics/containers/what-is-podman).
 
-Fast forward to 2023 where Docker would like you to do all your development using [Docker Desktop](https://www.docker.com/products/docker-desktop/alternatives/) because that's there business model and other vendors like RedHat support a container ecosystem that's built around cgroups v2 and OCI Containers using Podman as the drop-in replacement for Docker.
+Fast forward to 2023 where Docker would like you to do all your development using [Docker Desktop](https://www.docker.com/products/docker-desktop/alternatives/) because that's their business model and other vendors like RedHat support a container ecosystem that's built around cgroups v2 and OCI Containers using Podman as the drop-in replacement for Docker.
 
 ## Installing Docker on Fedora
 The Fedora 37 Workstation I'm using doesn't come with `docker` installed, so if you want to use `docker` it needs to be installed. The alternative is to use `podman`, but for now I'm installing `docker`. The options for installing `docker` on Fedora are:
