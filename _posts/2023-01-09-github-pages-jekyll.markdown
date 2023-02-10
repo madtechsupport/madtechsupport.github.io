@@ -44,3 +44,6 @@ Points to note:
 * The `--force` option is only required when files are already present in the new Jekyll project location.
 * `:Z` is required for hosts that have SELinux enabled. This is explained in detail here [Podman volumes and SELinux](https://blog.christophersmart.com/2021/01/31/podman-volumes-and-selinux/).
 * Running the `bundle add webrick` command is requied only once to update `Gemfile`.
+
+## Save a post without publishing
+There is a [predefined global variable](https://jekyllrb.com/docs/front-matter/#predefined-global-variables) called `published` that can be set to false to save a post and keep it unpublished when the site is generated.
