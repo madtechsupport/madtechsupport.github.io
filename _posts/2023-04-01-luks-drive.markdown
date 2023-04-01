@@ -3,12 +3,33 @@ layout: post
 title:  "Git commands I forget"
 date:   2023-04-10 13:00:00 +0000
 ---
-There are some git commands that I routinely forget and need to look up. Noting them here for quick reference. 
+Noting the commands used to set up a LUKS encrypted drive. Following https://docs.fedoraproject.org/en-US/quick-docs/encrypting-drives-using-LUKS/#_what_is_block_device_encryption
 
 ``` sh
-git branch -d  branch_name
+lsblk
 ```
+To work out the device name.
 
 ``` sh
-git branch -d -r origin/branch_name
+cryptsetup luksFormat <device>
+```
+Run `cryptsetup` as `root`.
+``` sh
+cryptsetup luksUUID <device>
+```
+Get the UUID.
+``` sh
+cryptsetup luksOpen <device> <name>
+```
+Open the LUKS device and map it to `/dev/mapper/<name>`
+``` sh
+mkfs.btrfs -L "<label>" /dev/mapper/<name>
+```
+Make a filesystem.
+``` sh
+vi /etc/crypttab
+```
+Make an entry in `crypttab` to map the `/dev/mapper/<name>` to the LUKS UUID at boot.
+``` sh
+vi /etc/fstab
 ```
