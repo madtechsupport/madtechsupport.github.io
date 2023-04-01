@@ -33,3 +33,4 @@ Make an entry in `crypttab` to map the `/dev/mapper/<name>` to the LUKS UUID at 
 ``` sh
 vi /etc/fstab
 ```
+Take care getting this entry right, a mistake will prevent the system from booting. Use either `/dev/mapper/<name>` for the device or UUID where the UUID comes from `blkid`.
