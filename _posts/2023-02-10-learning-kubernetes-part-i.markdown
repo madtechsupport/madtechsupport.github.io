@@ -8,7 +8,7 @@ One of the most sought after skill sets at the moment is Kubernetes experience. 
 ## Cover the basics
 I'm using this page to cherry pick learning resources: https://www.containiq.com/post/kubernetes-projects-for-beginners
 
-Watched the video first [https://www.youtube.com/watch?v=2gDvViyEtJ0](https://www.youtube.com/watch?v=2gDvViyEtJ0) it's mainly a Docker rapid start video that touches on Kubernetes at the end. But still, some nice ideas for commands to run. And I learnt about Google Borg and Omega and found this document too: https://research.google/pubs/pub44843/ "containers originall chroot" - oh yeah that makes sense!
+Watched the video first [https://www.youtube.com/watch?v=2gDvViyEtJ0](https://www.youtube.com/watch?v=2gDvViyEtJ0) it's mainly a Docker rapid start video that touches on Kubernetes at the end. But still, some nice ideas for commands to run. And I learnt about Google Borg and Omega and found this document too: [https://research.google/pubs/pub44843/](https://research.google/pubs/pub44843/) "the first containers just provided chroot" - that's a helpful mental starting point. Instead of thinking of containers as a reduced VM, it's more accurate to think of them as a "souped up" chroot process.
 
 ### Installing minikube
 * The video installs `kubectl` first before installing `minikube`... why? `kubectl` is the command line client that talks to the Kubernetes API. Turns out that `kubectl` is available as part of `minikube` and installing it separately is probably more for convinience. It's easier to type `kubectl get pods -A` rather than `minikube kubectl -- get pods -A`.
